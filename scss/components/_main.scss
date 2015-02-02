@@ -17,6 +17,11 @@ html {
 	box-sizing: inherit;
 }
 
+h1 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	color: $primary-light;	
+}
+
 
 body{
   font-family: sans-serif;
@@ -47,11 +52,12 @@ header {
       display: block;
       padding: .5em 1em;
       text-align: center;
-      border-bottom: 1px solid $light-grey;
+      border-bottom: 1px solid $primary-dark;
       text-decoration: none;
+	  color: $primary;
     }
     &:first-child a{
-      border-top: 1px solid $light-grey;
+      border-top: 1px solid $primary-dark;
     }
   } // li
 } // .navigation ul
@@ -62,8 +68,8 @@ header {
   height: 40px;
   width: 40px; 
   i{
-    border: 1px solid $light-grey;
-    padding: .5em; 
+    border: 1px solid $primary-light;
+    padding: .5em;
   }
   span{
     @include hide-text;
